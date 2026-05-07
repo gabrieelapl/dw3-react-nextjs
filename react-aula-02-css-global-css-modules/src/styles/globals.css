@@ -40,3 +40,12 @@ a {
     color-scheme: dark;
   }
 }
+
+.button{
+  width: 90px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+  margin-right: 4px;
+}

@@ -4,3 +4,19 @@
     height: 100px;
     background-color: white;
 }
+
+.vermelha{
+    background-color: red;
+}
+
+.amarela{
+    background-color: yellow;
+}
+
+.verde{
+    background-color: green;
+}
+
+.cinza{
+    background-color: gray;
+}

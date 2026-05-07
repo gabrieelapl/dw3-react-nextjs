@@ -1,32 +1,38 @@
-// importando o css modules (css externo)
 import styles from "@/components/Semaforo/Semaforo.module.css"
 
 const Semaforo = () => {
-    return(
+    return (
         <>
-            {/* Container */}
-            {/* CSS Inline */}
-            <div style={
-                {
-                    height: "100vh",
-                    display: "flex",
-                    // flex-direction
-                    flexDirection: "column",
-                    alignItems: "center",
-                    backgroundColor: "#f0f0f0",
-                    marginTop: "30px"
+            <div
+                style={
+                    {
+                        height: "100vh",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        backgroundColor: "#f0f0f0"
+                    }
                 }
-            }>
-                <h3 style={{marginTop: "30px"}}>
-                    Semáforo em React
-                </h3>
+            >
+                <h3 style={{ marginTop: "30px" }}>Semáforo em React</h3>
+
                 <br />
-                {/* Luzes do semáforo */}
+
                 <div className={styles.luz}></div>
                 <div className={styles.luz}></div>
                 <div className={styles.luz}></div>
+                
+                <br />
+                
+                <div>
+                    <button className="button">Pare!</button>
+                    <button className="button">Atenção!</button>
+                    <button className="button">Prossiga!</button>
+                </div>
             </div>
         </>
+    
     )
 }
+
 export default Semaforo;
